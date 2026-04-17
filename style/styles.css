@@ -66,13 +66,22 @@ main .naglowek {
 
 .search {
     background-color: #FF8C00;
-    width: 20%;
+    width: 21%;
     color: white;
     padding: 5px;
     margin-right: 10px;
 }
 
 .searchbar {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.search button, .search input {
+    margin-top: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
     text-align: center;
 }
 
