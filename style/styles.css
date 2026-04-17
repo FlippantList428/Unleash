@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    position: relative;
+}
+
 header h1 {
     color: white;
     background-color: #0B237B;
@@ -19,6 +23,8 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -42,6 +48,8 @@ nav a:hover {
 main {
     background-color: #F4F4F9;
     width: 70%;
+    min-height: 500px;
+    margin-left: 5px;
 }
 
 main .naglowek {
@@ -53,6 +61,11 @@ main .naglowek {
     color: black;
     margin: 10px;
     padding: 5px;
+    transition: 0.3s;
+}
+
+.artykul:hover {
+    scale: 1.02;
 }
 
 .artykul a {
@@ -83,6 +96,19 @@ main .naglowek {
     padding: 5px;
     border-radius: 15px;
     text-align: center;
+}
+
+.search ul {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.search li {
+    list-style: symbols(cyclic "➡️");
+}
+
+.search li:first-child {
+    list-style: symbols(cyclic "🔥");
 }
 
 footer {

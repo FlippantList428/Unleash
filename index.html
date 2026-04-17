@@ -9,25 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>💻 Unleash – Twoje główne źródło informacji</h1>
+        <h1>💻 Unleash – Twoje pierwsze źródło informacji</h1>
+        <div id="zegar"></div>
     </header>
     <nav>
         <a class="odnosnik" href="index.html">🏠 Strona główna</a>
         <a class="odnosnik" href="#news">🗞️ Nowości</a>
         <a class="odnosnik" href="#">💬 Społeczność</a>
-        <a class="odnosnik" href="#">❤️‍🔥 Popularne</a>
-        <a class="odnosnik" href="#">👨‍🦱 Konto</a>
+        <a class="odnosnik" href="#trendy">❤️‍🔥 Popularne</a>
+        <a class="odnosnik" href="account.php">👨‍🦱 Konto</a>
     </nav>
     <section class="kontener">
         <main>
             <h2 id="news" class="naglowek">📰 News</h2>
             <article class="artykul">
-                <h3 class="tytul">🚨 Z ostatniej chwili</h3>
+                <h3 class="tytul"><a class="tytul" href="#">🚨 Z ostatniej chwili - Zamknięcie Toru Poznań</a></h3>
                 <p class="tresc">Tor Poznań zamknięty z powodu przekroczenia norm emisji hałasu</p>
             </article>
             <article class="artykul">
-                <h3 class="tytul">Mecz Polska - Ukraina</h3>
+                <h3 class="tytul"><a class="tytul" href="#">Mecz Polska - Ukraina</a></h3>
                 <p class="tresc">Oglądaj transmisje na żywo z meczu Polska - Ukraina w naszym <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">serwisie</a></p>
+            </article>
+            <article class="artykul">
+                <h3 class="tytul"><a class="tytul" href="#">Nowy przełom w AI: Model, który rozumie emocje</a></h3>
+                <p class="tresc">Naukowcy zaprezentowali nową architekturę sieci neuronowych, która potrafi rozpoznawać subtelne zmiany w głosie użytkownika. Czy to koniec ery chłodnych asystentów głosowych?</p>
+            </article>
+            <article class="artykul">
+                <h3 class="tytul"><a class="tytul" href="#">Nowy procesor kwantowy od Google – przełom w obliczeniach?</a></h3>
+                <p class="tresc">Inżynierowie ogłosili stworzenie układu, który wykonuje operacje w sekundy, podczas gdy tradycyjne superkomputery potrzebowałyby na to tysięcy lat.</p>
             </article>
         </main>
         <aside class="search">
@@ -36,6 +45,12 @@
                 <input type="text" placeholder="Wpisz wyszukiwaną frazę">
                 <button>Wyszukaj</button>
             </form>
+            <br>
+            <h4>Najczęściej wyszukiwane:</h4>
+            <ul>
+                <li>Polska - Ukraina</li>
+                <li>Tor Poznań</li>
+            </ul>
         </aside>
     </section>
     <footer>&copy; 2026 Unleash | Wszelkie prawa zastrzeżone</footer>
