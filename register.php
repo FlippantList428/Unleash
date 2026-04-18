@@ -1,11 +1,3 @@
-<?php 
-session_start();
-// Sprawdzenie czy sesja istnieje
-if (!isset($_SESSION['zalogowany']) || $_SESSION['zalogowany'] !== true) {
-    header("Location: login.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -27,10 +19,14 @@ if (!isset($_SESSION['zalogowany']) || $_SESSION['zalogowany'] !== true) {
         <a class="odnosnik" href="#trendy">❤️‍🔥 Popularne</a>
         <a class="odnosnik" href="account.php">👨‍🦱 Konto</a>
     </nav>
-    <main>
-        <h2>Witaj, <?php echo $_SESSION['user_login']; ?>!</h2>
-        <p>To jest twój panel profilu</p>
-        <a href="logout.php">Wyloguj się</a>
-    </main>
+    <form action="register_process.php" method="POST" class="rejestracja">
+        <input type="text" name="login" placeholder="Nazwa użytkownika" required>
+        <input type="email" name="email" placeholder="Adreds E-mail" required>
+        <input type="number" name="phone" placeholder="Numer Telefonu">
+        <input type="password" name="password" placeholder="Hasło" required>
+        <input type="password" name="confirm_password" placeholder="Powtórz hasłó" required>
+        <button>Zarejestruj się</button>
+    </form>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
