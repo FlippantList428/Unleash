@@ -9,6 +9,19 @@ header {
     position: relative;
 }
 
+/* Stylizowanie dla zegara w css */
+
+#zegar {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: x-large;
+}
+
 header h1 {
     color: white;
     background-color: #0B237B;
@@ -62,6 +75,7 @@ main .naglowek {
     margin: 10px;
     padding: 5px;
     transition: 0.3s;
+    line-height: 1.6;
 }
 
 .artykul:hover {
@@ -75,6 +89,10 @@ main .naglowek {
 
 .artykul .tytul {
     color: #E63946;
+}
+
+.artykul p {
+    font-style: unset;
 }
 
 .search {
@@ -109,6 +127,12 @@ main .naglowek {
 
 .search li:first-child {
     list-style: symbols(cyclic "🔥");
+}
+
+.search .lista {
+    text-decoration: none;
+    color: white;
+    line-height: 1.4;
 }
 
 footer {
