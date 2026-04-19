@@ -21,10 +21,10 @@
     </nav>
     <form action="register_process.php" method="POST" class="rejestracja">
         <input type="text" name="login" placeholder="Nazwa użytkownika" required>
-        <input type="email" name="email" placeholder="Adreds E-mail" required>
+        <input type="email" name="email" placeholder="Adres E-mail" required>
         <input type="number" name="phone" placeholder="Numer Telefonu">
         <input type="password" name="password" placeholder="Hasło" required>
-        <input type="password" name="confirm_password" placeholder="Powtórz hasłó" required>
+        <input type="password" name="confirm_password" placeholder="Powtórz hasło" required>
         <button>Zarejestruj się</button>
     </form>
     <script src="scripts/script.js"></script>
