@@ -8,4 +8,11 @@ CREATE TABLE IF NOT EXISTS uzytkownicy (
     email varchar(100) NOT null UNIQUE,
     telefon varchar(15) UNIQUE,
     rejestracja DATETIME DEFAULT CURRENT_TIMESTAMP
-)
+);
+
+CREATE TABLE IF NOT EXISTS artykuly (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    tytul VARCHAR(100),
+    tresc TEXT,
+    data_dodania DATETIME DEFAULT CURRENT_TIMESTAMP
+);
