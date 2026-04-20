@@ -1,3 +1,5 @@
+/* STYLIZOWANIE OGÓLNEJ CZĘŚCI STRONY I USNIĘCIE DOMYŚLNYCH ODSTĘPÓW */
+
 * {
     padding: 0;
     margin: 0;
@@ -5,11 +7,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* USTAWIENIA STYLIZOWANIA DLA NAGŁÓWKA */
+
 header {
     position: relative;
 }
 
-/* Stylizowanie dla zegara w css */
+/* STYLIZOWANIE ZEGARA */
 
 #zegar {
     position: absolute;
@@ -28,6 +32,8 @@ header h1 {
     padding: 15px;
     text-align: center;
 }
+
+/* STYLIZOWANIE DLA PANELU NAWIGACYJNEGO */
 
 nav {
     text-align: center;
@@ -69,6 +75,8 @@ main .naglowek {
     text-align: center;
 }
 
+/* STYLIZOWANIE ELEMENTÓW STRONY GŁÓWNEJ */
+/* STYLIZOWANIE AKRTYKÓŁÓW */
 .artykul {
     background-color: #FFFFFF;
     color: black;
@@ -94,6 +102,8 @@ main .naglowek {
 .artykul p {
     font-style: unset;
 }
+
+/* STYLIZOWANIE PASKA WYSZUKIWANIA */
 
 .search {
     background-color: #FF8C00;
@@ -135,6 +145,8 @@ main .naglowek {
     line-height: 1.4;
 }
 
+/* STYLIZOWANIE STOPKI STRONY */
+
 footer {
     background-color: #0B237B;
     color: white;
@@ -143,6 +155,8 @@ footer {
     font-size: small;
     margin-top: 20px;
 }
+
+/* STYLIZOWANIE EKRANU LOGOWANIA */
 
 /* Do naprawy stylizowanie ekranu logowania 
 - interfejs ma być na środku
