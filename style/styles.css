@@ -143,3 +143,36 @@ footer {
     font-size: small;
     margin-top: 20px;
 }
+
+/* Do naprawy stylizowanie ekranu logowania 
+- interfejs ma być na środku
+- h2 ma miec niebieskie tło z nagłówku
+- ramki na text mają mieć ładny zaokrąglony wygląd
+- przyciski mają być delikatnie zaokrąglone ale bez przesady
+- usunąć margin jako odstęp od lewej i zrobić to po bożemu
+- zmienić styl wizualny textu "Nie masz jeszcze konta?"
+- zmienić styl odnośnika do strony logowania
+*/
+
+.login {
+    align-items: center;
+    margin: 20px;
+    margin-left: 35%;
+}
+
+.login h2{
+    color: white;
+    background-color: #0B237B;
+    padding: 3%;
+    width: 40%;
+    text-align: center;
+    margin: 0;
+}
+
+.login form {
+    background-color: #F4F4F9;
+    width: 40%;
+    margin: 0;
+    padding: 3;
+    align-items: center;
+}
