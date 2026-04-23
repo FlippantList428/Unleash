@@ -28,7 +28,7 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] == true) {
     </nav>
     <section class="login">
         <h2>Zaloguj się!</h2>
-        <form action="login_process.php" method="POST" style="margin-top: 20px;" class="logowanie">
+        <form action="login_process.php" method="POST" class="logowanie">
             <input type="text" name="login" placeholder="Login" required><br><br>
             <input type="password" name="password" placeholder="Hasło" required><br><br>
             <button type="submit">Zaloguj się</button>
