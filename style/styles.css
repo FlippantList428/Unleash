@@ -215,6 +215,15 @@ footer {
     padding-right: 5px;
 }
 
+.form button {
+    color: white;
+    background-color: #FF8C00;
+    border-radius: 8px;
+    text-decoration: underline;
+    padding: 6px;
+    border: none
+}
+
 /* STYLIZOWANIE ODNOŚNIKA DO REJESTRACJI */
 .form-button {
     color: black;
