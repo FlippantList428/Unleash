@@ -19,14 +19,25 @@
         <a class="odnosnik" href="#trendy">❤️‍🔥 Popularne</a>
         <a class="odnosnik" href="account.php">👨‍🦱 Konto</a>
     </nav>
-    <form action="register_process.php" method="POST" class="rejestracja">
-        <input type="text" name="login" placeholder="Nazwa użytkownika" required><br>
-        <input type="email" name="email" placeholder="Adres E-mail" required><br>
-        <input type="number" name="phone" placeholder="Numer Telefonu"><br>
-        <input type="password" name="password" placeholder="Hasło" required><br>
-        <input type="password" name="confirm_password" placeholder="Powtórz hasło" required><br>
-        <button>Zarejestruj się</button>
-    </form>
+    <div class="login-box">
+        <section class="form">
+            <h2>Zarejestruj się!</h2>
+            <form action="register_process.php" method="POST" class="rejestracja">
+                <p>Wybierz login:</p>
+                <input type="text" name="login" placeholder="Nazwa użytkownika" required>
+                <p>Wpisz swój adres e-mail:</p>
+                <input type="email" name="email" placeholder="Adres E-mail" required>
+                <p>Wprowadź swój numer telefonu</p>
+                <input type="number" name="phone" placeholder="Numer Telefonu">
+                <p>Wpisz hasło</p>
+                <input type="password" name="password" placeholder="Hasło" required>
+                <p>Potwierdź hasło</p>
+                <input type="password" name="confirm_password" placeholder="Powtórz hasło" required>
+                <button>Zarejestruj się</button>
+            </form>
+            <p class="form-button">Masz już konto? <a href="login.php">Zaloguj się tutaj</a></p>
+        </section>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
