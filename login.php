@@ -31,9 +31,9 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] == true) {
             <h2>Zaloguj się!</h2>
             <form action="login_process.php" method="POST" class="logowanie">
                 <p>Wprowadź login:</p>
-                <input type="text" name="login" placeholder="Login" required><br>
+                <input type="text" name="login" placeholder="Login" required>
                 <p>Wprowadź hasło:</p>
-                <input type="password" name="password" placeholder="Hasło" required><br>
+                <input type="password" name="password" placeholder="Hasło" required>
                 <button type="submit">Zaloguj się</button>
             </form>
             <p class="form-button">Nie masz jeszcze konta? <a href="register.php">Zarejestruj się tutaj</a></p>
