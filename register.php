@@ -13,7 +13,7 @@
         <div id="zegar"></div>
     </header>
     <nav>
-        <a class="odnosnik" href="index.html">🏠 Strona główna</a>
+        <a class="odnosnik" href="index.php">🏠 Strona główna</a>
         <a class="odnosnik" href="#news">🗞️ Nowości</a>
         <a class="odnosnik" href="#">💬 Społeczność</a>
         <a class="odnosnik" href="#trendy">❤️‍🔥 Popularne</a>
@@ -23,15 +23,15 @@
         <section class="form">
             <h2>Zarejestruj się!</h2>
             <form action="register_process.php" method="POST" class="rejestracja">
-                <p>Wybierz login:</p>
+                <label>Wybierz login:</label>
                 <input type="text" name="login" placeholder="Nazwa użytkownika" required>
-                <p>Wpisz swój adres e-mail:</p>
+                <label>Wpisz swój adres e-mail:</label>
                 <input type="email" name="email" placeholder="Adres E-mail" required>
-                <p>Wprowadź swój numer telefonu</p>
+                <label>Wprowadź swój numer telefonu</label>
                 <input type="number" name="phone" placeholder="Numer Telefonu">
-                <p>Wpisz hasło</p>
+                <label>Wpisz hasło</label>
                 <input type="password" name="password" placeholder="Hasło" required>
-                <p>Potwierdź hasło</p>
+                <label>Potwierdź hasło</label>
                 <input type="password" name="confirm_password" placeholder="Powtórz hasło" required>
                 <button>Zarejestruj się</button>
             </form>

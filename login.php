@@ -20,7 +20,7 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] == true) {
         <div id="zegar"></div>
     </header>
     <nav>
-        <a class="odnosnik" href="index.html">🏠 Strona główna</a>
+        <a class="odnosnik" href="index.php">🏠 Strona główna</a>
         <a class="odnosnik" href="#news">🗞️ Nowości</a>
         <a class="odnosnik" href="#">💬 Społeczność</a>
         <a class="odnosnik" href="#trendy">❤️‍🔥 Popularne</a>
@@ -30,9 +30,9 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] == true) {
         <section class="form">
             <h2>Zaloguj się!</h2>
             <form action="login_process.php" method="POST" class="logowanie">
-                <p>Wprowadź login:</p>
+                <label>Wprowadź login:</label>
                 <input type="text" name="login" placeholder="Login" required>
-                <p>Wprowadź hasło:</p>
+                <label>Wprowadź hasło:</label>
                 <input type="password" name="password" placeholder="Hasło" required>
                 <button type="submit">Zaloguj się</button>
             </form>
