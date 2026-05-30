@@ -22,6 +22,18 @@
     <section class="kontener">
         <main>
             <h2 id="news" class="naglowek">📰 News</h2>
+            <?php 
+            require_once "db.php";
+            $sql = "SELECT tytul, tresc, data_dodania FROM artykuly";
+            $result = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<article class='artykul'>";
+                    echo "<h3 class='tytul'>" . "<a class='tytul' href='#'>" . $row['tytul'] . "</a>" . "</h3>";
+                    echo "<p class='tresc'>" . $row['tresc'] . "</p>";
+                echo "</article>";
+            }
+            ?>
+            <!--
             <article class="artykul">
                 <h3 class="tytul"><a class="tytul" href="#">🚨 Z ostatniej chwili - Zamknięcie Toru Poznań</a></h3>
                 <p class="tresc">Tor Poznań zamknięty z powodu przekroczenia norm emisji hałasu</p>
@@ -37,7 +49,8 @@
             <article class="artykul">
                 <h3 class="tytul"><a class="tytul" href="#">Nowy procesor kwantowy od Google – przełom w obliczeniach?</a></h3>
                 <p class="tresc">Inżynierowie ogłosili stworzenie układu, który wykonuje operacje w sekundy, podczas gdy tradycyjne superkomputery potrzebowałyby na to tysięcy lat.</p>
-            </article>
+            </article> 
+            -->
         </main>
         <aside class="search">
             <h4 class="searchbar">Wyszukiwarka:</h4>
