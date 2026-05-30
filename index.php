@@ -58,5 +58,5 @@
     <footer>&copy; 2026 Unleash | Wszelkie prawa zastrzeżone</footer>
     <!-- Dodanie skryptów do pliku HTML -->
      <script src="scripts/script.js"></script>
-</body>
+    </body>
 </html>
