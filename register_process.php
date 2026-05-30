@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_stmt_execute($stmt)) {
         header("Location: login.php?status=success");
+        exit;
     } else {
         echo "Błąd:" . mysqli_errno($conn);
     }

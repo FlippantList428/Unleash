@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS uzytkownicy (
     haslo varchar(255) NOT null,
     email varchar(100) NOT null UNIQUE,
     telefon varchar(15) UNIQUE,
-    rejestracja DATETIME DEFAULT CURRENT_TIMESTAMP
+    rejestracja DATETIME DEFAULT CURRENT_TIMESTAMP,
+    typ varchar(20) DEFAULT 'user'
 );
 
 CREATE TABLE IF NOT EXISTS artykuly (
